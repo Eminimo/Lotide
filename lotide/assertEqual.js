@@ -20,4 +20,5 @@ const assertEqual = function(actual, expected) {
   
   // Comparing non-identical numbers
   assertEqual(5, 10); // 🛑🛑🛑 Assertion Failed: 5 !== 10
+  module.exports = assertEqual;
   
