@@ -1,19 +1,10 @@
-// head.js
+// test/assertEqualTest.js
 
-const assertEqual = require('./assertEqual'); // Require assertEqual from the external module
+const assertEqual = require('../assertEqual');
 
-// Implement the head function
-const head = function(array) {
-  // Check if the array is not empty
-  if (array && array.length > 0) {
-    return array[0]; // Return the first element
-  }
-  // Return undefined for empty array
-  return undefined;
-};
-
-// Test Cases
-assertEqual(head([5, 6, 7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([1]), 1); // Single-element array
-assertEqual(head([]), undefined); // Empty array
+// TEST CASES for assertEqual function
+assertEqual("hello", "hello"); // Example test
+assertEqual("abc", "def"); // Example test
+assertEqual(42, 42); // Example test
+assertEqual(5, 10); // Example test
+// ... add more test cases if needed
